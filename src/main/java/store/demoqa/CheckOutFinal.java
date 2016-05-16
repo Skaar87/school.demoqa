@@ -33,6 +33,12 @@ public class CheckOutFinal{
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//*[@id='current_country']/option[233]")).click();
 		driver.findElement(By.xpath("//*[@id='change_country']/input[4]")).click();
+		
+		/*
+		 * 
+		 * Borde ha gjort om den till en double eller long istället för en int.
+		 * 
+		 */
 		String USA = driver.findElement(By.xpath("//*[@id='wpsc_shopping_cart_container']/form/div[3]/table/tbody/tr[2]/td[2]/span/span")).getText();
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//*[@id='uniform-current_country']/span")).click();
